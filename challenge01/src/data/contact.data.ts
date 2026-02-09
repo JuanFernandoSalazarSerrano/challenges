@@ -80,5 +80,13 @@ export const CONTACTS: Contact[]  =[
     "email": "isabella.garcia@example.com",
     "username": "igarcia",
     "skills": "SEO, Content Strategy"
+  },
+    {
+    "id": 11,
+    "name": "Federico",
+    "lastname": "Gonzales",
+    "email": "cardenas@gmail.com",
+    "username": "fedegoca",
+    "skills": "React, Python"
   }
 ]
