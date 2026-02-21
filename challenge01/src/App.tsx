@@ -4,7 +4,7 @@ import ContactCard from './components/ContactCard'
 import AddContactButton from './components/AddContactButton'
 import {Contact} from '../src/models/contact'
 import {CONTACTS} from './data/contact.data'
-
+import ImagenComponent from './components/ImageComponent'
 
 function App() {
 
@@ -57,6 +57,9 @@ function App() {
         buttonMessage="Delete Contact!"
         onClick={deleteContact}
       />
+
+      <ImagenComponent/>
+
     </>
   )
 }

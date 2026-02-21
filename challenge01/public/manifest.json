@@ -1,0 +1,17 @@
+{
+	"name": "Contact Manager",
+	"short_name": "Contacts",
+	"description": "A simple contact manager app built with React and Vite.",
+	"start_url": ".",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#1976d2",
+	"orientation": "portrait",
+	"icons": [
+		{
+			"src": "/assets/contacto1-1FTh4q85.png",
+			"sizes": "any",
+			"type": "image/png"
+		}
+	]
+}
