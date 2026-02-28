@@ -5,12 +5,14 @@ import AddContactButton from './components/AddContactButton'
 import {Contact} from '../src/models/contact'
 import {CONTACTS} from './data/contact.data'
 import ImagenComponent from './components/ImageComponent'
+import ContactCardEdit from './components/ContactCardEdit'
 
 function App() {
 
   const [ArrayOfContacts, setArrayOfContacts] = useState<Contact[]>([])
   const [contactCount, setContactCount] = useState<number>(0)
   const [noMoreContactsMessage, setNoMoreContactsMessage] = useState<string | null>(null)
+  const [editingContactId, setEditingContactId] = useState<number | null>(null)
 
     const addContact = () => {
     if ((contactCount == 10)){ 
@@ -20,6 +22,10 @@ function App() {
       setContactCount(contactCount + 1)
       setArrayOfContacts(prev => [...prev, CONTACTS[contactCount]])
     }
+  }
+
+  const abc = (contact: Contact) => {
+    setEditingContactId(contact.id)
   }
 
   const deleteContact = () => {
@@ -42,8 +48,13 @@ function App() {
         <p className="text-center text-4xl text-slate-600 m-52 decoration-8 decoration-blue-500 col-span-3">Your contact list is empty, add some contacts!</p>
       ) : (
         ArrayOfContacts.map(contact => (
-          <ContactCard key={contact.id} contact={contact} />
-        ))
+          editingContactId === contact.id ? (
+            <ContactCardEdit key={contact.id} contact={contact} />
+          ) : (
+            <ContactCard key={contact.id} contact={contact} onClick={abc} />
+          )
+        )
+      )
       )}
       {noMoreContactsMessage != null && <p className="text-center text-4xl font-bold text-red-500 mb-4">{noMoreContactsMessage}</p>}
     </div>
