@@ -1,6 +1,8 @@
 PARCIAL 1
 La clínica privada "MediCare+" necesita modernizar su sistema de gestión de pacientes y turnos. Se desarrollarán dos productos: una PWA para el personal administrativo de escritorio, y una app móvil en Ionic para los médicos que hacen visitas a domicilio. Ninguna tiene backend real: toda la información se almacena en localStorage y la autenticación es simulada con usuarios fijos.
 
+https://69aca0e8d40eff43b2fb42b4--benevolent-sfogliatella-9ec976.netlify.app/
+
 EJERCICIO 1 — PWA: MediCare+ Administración Web
 Desarrollá una Progressive Web App en React orientada al personal administrativo de la clínica. Permite gestionar pacientes, asignarles turnos y armar un resumen de atención diaria
 
