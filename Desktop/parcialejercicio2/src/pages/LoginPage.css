@@ -1,0 +1,20 @@
+.login-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-button-container {
+  margin-top: 30px;
+}
+
+ion-item {
+  margin-bottom: 10px;
+}

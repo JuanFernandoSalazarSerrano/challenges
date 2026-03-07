@@ -1,0 +1,59 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.medicamentos-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.medicamentos-list h4 {
+  margin-bottom: 10px;
+}
+
+.finalizar-button {
+  margin-top: 20px;
+}
+
+.estado {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 80px;
+  display: inline-block;
+}
+
+.estado-pendiente {
+  background-color: #ffc409;
+  color: #fff;
+}
+
+.estado-en_camino {
+  background-color: #3dc9f7;
+  color: #fff;
+}
+
+.estado-finalizada {
+  background-color: #2dd36f;
+  color: #fff;
+}
+
+.estado-cancelada {
+  background-color: #eb445c;
+  color: #fff;
+}
