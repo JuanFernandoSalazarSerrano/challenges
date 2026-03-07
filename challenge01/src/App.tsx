@@ -1,78 +1,42 @@
-import { useState } from 'react'
-import './App.css'
-import ContactCard from './components/ContactCard'
-import AddContactButton from './components/AddContactButton'
-import {Contact} from '../src/models/contact'
-import {CONTACTS} from './data/contact.data'
-import ImagenComponent from './components/ImageComponent'
-import ContactCardEdit from './components/ContactCardEdit'
+import { useState, useEffect } from 'react';
+import { User } from './models/user';
+import { LoginForm } from './components/LoginForm';
+import { Header } from './components/Header';
+import { Dashboard } from './components/Dashboard';
+import './App.css';
 
 function App() {
+  const [user, setUser] = useState<User | null>(null);
 
-  const [ArrayOfContacts, setArrayOfContacts] = useState<Contact[]>([])
-  const [contactCount, setContactCount] = useState<number>(0)
-  const [noMoreContactsMessage, setNoMoreContactsMessage] = useState<string | null>(null)
-  const [editingContactId, setEditingContactId] = useState<number | null>(null)
-
-    const addContact = () => {
-    if ((contactCount == 10)){ 
-      setNoMoreContactsMessage("You dont have more contacts to add!")
+  useEffect(() => {
+    const storedUser = localStorage.getItem('medicare_user');
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
     }
-    else{
-      setContactCount(contactCount + 1)
-      setArrayOfContacts(prev => [...prev, CONTACTS[contactCount]])
-    }
-  }
+  }, []);
 
-  const abc = (contact: Contact) => {
-    setEditingContactId(contact.id)
-  }
+  const handleLogin = (loggedUser: User) => {
+    setUser(loggedUser);
+    localStorage.setItem('medicare_user', JSON.stringify(loggedUser));
+  };
 
-  const deleteContact = () => {
-    setArrayOfContacts(prev => prev.slice(0, -1))
-    setContactCount(contactCount - 1)
-    setNoMoreContactsMessage(null)
-  }
+  const handleLogout = () => {
+    setUser(null);
+    localStorage.removeItem('medicare_user');
+  };
 
   return (
-
-    <>
-<h1 className="mb-4 text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
-  Add to your {' '}
-  <span className="underline underline-offset-4 decoration-8 decoration-blue-500">
-    Contacts!
-  </span>
-</h1>
-    <div className="grid grid-cols-3 gap-4 justify-items-center">
-      {ArrayOfContacts.length === 0 ? (
-        <p className="text-center text-4xl text-slate-600 m-52 decoration-8 decoration-blue-500 col-span-3">Your contact list is empty, add some contacts!</p>
+    <div className="min-h-screen bg-gray-50">
+      {user ? (
+        <>
+          <Header user={user} onLogout={handleLogout} />
+          <Dashboard user={user} />
+        </>
       ) : (
-        ArrayOfContacts.map(contact => (
-          editingContactId === contact.id ? (
-            <ContactCardEdit key={contact.id} contact={contact} />
-          ) : (
-            <ContactCard key={contact.id} contact={contact} onClick={abc} />
-          )
-        )
-      )
+        <LoginForm onLogin={handleLogin} />
       )}
-      {noMoreContactsMessage != null && <p className="text-center text-4xl font-bold text-red-500 mb-4">{noMoreContactsMessage}</p>}
     </div>
-
-      <AddContactButton
-        buttonMessage="Add Contact!"
-        onClick={addContact}
-      />
-
-      <AddContactButton
-        buttonMessage="Delete Contact!"
-        onClick={deleteContact}
-      />
-
-      <ImagenComponent/>
-
-    </>
-  )
+  );
 }
 
-export default App
+export default App;

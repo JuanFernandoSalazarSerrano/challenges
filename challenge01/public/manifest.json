@@ -1,16 +1,21 @@
 {
-	"name": "Contact Manager",
-	"short_name": "Contacts",
-	"description": "A simple contact manager app built with React and Vite.",
-	"start_url": ".",
+	"name": "MediCare+ Admin",
+	"short_name": "MediCare",
+	"description": "Administración Web para MediCare+",
+	"start_url": "/",
 	"display": "standalone",
-	"background_color": "#ffffff",
-	"theme_color": "#1976d2",
+	"background_color": "#FFFFFF",
+	"theme_color": "#0C2340",
 	"orientation": "portrait",
 	"icons": [
 		{
-			"src": "/assets/contacto1-1FTh4q85.png",
-			"sizes": "any",
+			"src": "/assets/icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/assets/icon-512x512.png",
+			"sizes": "512x512",
 			"type": "image/png"
 		}
 	]
