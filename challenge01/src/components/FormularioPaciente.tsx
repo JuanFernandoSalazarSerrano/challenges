@@ -29,7 +29,7 @@ export function FormularioPaciente({ pacienteAEditar, onGuardar }: FormularioPac
   }, [pacienteAEditar]);
 
   const validate = () => {
-    const newErrors: { any } = {};
+    const newErrors: any  = {};
     if (!nombre.trim()) newErrors.nombre = 'Nombre es obligatorio';
     if (!apellido.trim()) newErrors.apellido = 'Apellido es obligatorio';
     if (!dni.trim()) newErrors.dni = 'DNI es obligatorio';
