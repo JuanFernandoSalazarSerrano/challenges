@@ -1,0 +1,7 @@
+{
+  "name": "Challenge-07-Sensores",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

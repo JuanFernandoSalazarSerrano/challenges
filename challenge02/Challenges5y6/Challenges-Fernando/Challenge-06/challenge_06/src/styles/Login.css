@@ -1,0 +1,67 @@
+.login-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --background: radial-gradient(circle at 20% 20%, #ffe2b8 0%, #f0c6a0 35%, #1f2a44 100%);
+  min-height: 100vh;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-card {
+  box-shadow: 0 20px 40px rgba(15, 21, 35, 0.35);
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255, 248, 238, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2a44;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1f2a44;
+  font-size: 14px;
+}
+
+.form-group ion-input {
+  border: 1px solid #d7b99f;
+  border-radius: 10px;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  --color: #1f2a44;
+}
+
+.form-group ion-input:focus {
+  border-color: #2e5bff;
+  background-color: #fff;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.login-button {
+  margin-bottom: 10px;
+  font-weight: 600;
+  height: 45px;
+  --border-radius: 10px;
+  --background: #2e5bff;
+}

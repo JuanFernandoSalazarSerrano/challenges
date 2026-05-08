@@ -1,0 +1,30 @@
+.sensor-content {
+  --background: linear-gradient(180deg, #f3f9ff 0%, #eef4ff 55%, #f6fbff 100%);
+}
+
+.sensor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 16px;
+}
+
+.sensor-result {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #eef6ff;
+  border: 1px solid #c8defa;
+}
+
+.sensor-image-wrap {
+  margin-top: 14px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #c8defa;
+}
+
+.sensor-token {
+  word-break: break-all;
+  font-size: 12px;
+}

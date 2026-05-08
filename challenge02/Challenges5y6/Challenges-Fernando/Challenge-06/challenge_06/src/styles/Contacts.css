@@ -1,0 +1,137 @@
+.content-background {
+  --background: linear-gradient(160deg, #182235 0%, #243a57 45%, #0d1420 100%);
+}
+
+.network-status {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.online-badge {
+  background-color: #2dd36f;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.offline-badge {
+  background-color: #ffc409;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.form-card {
+  margin: 16px;
+  box-shadow: 0 18px 38px rgba(5, 10, 20, 0.35);
+  border-radius: 16px;
+  background: rgba(15, 23, 36, 0.82);
+}
+
+.form-card ion-card-header {
+  background-color: rgba(20, 33, 50, 0.8);
+  border-bottom: 1px solid rgba(126, 166, 255, 0.45);
+}
+
+.form-card ion-card-title {
+  color: #dce9ff;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #c8dcff;
+  font-size: 14px;
+}
+
+.form-group ion-input {
+  border: 1px solid rgba(132, 177, 255, 0.35);
+  border-radius: 10px;
+  padding: 8px 12px;
+  background-color: rgba(243, 248, 255, 0.1);
+  --color: #eaf3ff;
+}
+
+.form-group ion-input:focus {
+  border-color: #7eb5ff;
+  background-color: rgba(243, 248, 255, 0.18);
+}
+
+.form-group ion-input:disabled {
+  background-color: rgba(130, 149, 176, 0.15);
+  color: #93a7c2;
+  cursor: not-allowed;
+}
+
+.list-card {
+  margin: 16px;
+  box-shadow: 0 18px 38px rgba(5, 10, 20, 0.35);
+  border-radius: 16px;
+  background: rgba(15, 23, 36, 0.82);
+}
+
+.list-card ion-card-header {
+  background-color: rgba(20, 33, 50, 0.8);
+  border-bottom: 1px solid rgba(126, 166, 255, 0.45);
+}
+
+.list-card ion-card-title {
+  color: #dce9ff;
+  font-weight: 700;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #9fb7d9;
+  padding: 20px;
+  font-style: italic;
+}
+
+.contact-item {
+  padding: 12px;
+  border-bottom: 1px solid rgba(126, 166, 255, 0.18);
+  --background: transparent;
+}
+
+.contact-item ion-label h2 {
+  font-weight: 600;
+  color: #eaf3ff;
+}
+
+.contact-item ion-label p {
+  font-size: 12px;
+  color: #b7cdeb;
+}
+
+.contact-item ion-button {
+  margin: 0;
+  padding: 8px;
+}
+
+.error-message {
+  color: #ffd7d7;
+  background: rgba(167, 43, 43, 0.22);
+  border: 1px solid rgba(255, 130, 130, 0.45);
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}

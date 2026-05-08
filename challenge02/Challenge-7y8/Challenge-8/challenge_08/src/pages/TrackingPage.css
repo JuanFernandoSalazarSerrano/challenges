@@ -1,0 +1,128 @@
+.tracking-page {
+  --background: #f5f5f5;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.info-card {
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.location-info ion-icon {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.status-info {
+  padding: 10px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: background 0.3s ease;
+}
+
+.status-info.moving {
+  background: #d4edda;
+}
+
+.status-info.stationary {
+  background: #fff3cd;
+}
+
+.status-info.connected {
+  background: #d4edda;
+}
+
+.status-info.disconnected {
+  background: #f8d7da;
+}
+
+.status-info ion-icon {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 5px 0 0 0;
+}
+
+.tracking-stats {
+  margin: 10px;
+  border-radius: 12px;
+  background: #e7f3ff;
+  border-left: 4px solid #007bff;
+}
+
+.nearby-places {
+  margin: 10px;
+  border-radius: 12px;
+}
+
+.nearby-places h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.place-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.place-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.place-distance {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+}
+
+.button-group {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.button-group ion-button {
+  margin: 0;
+}

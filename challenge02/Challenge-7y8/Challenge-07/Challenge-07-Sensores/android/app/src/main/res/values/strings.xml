@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Challenge 07 - Sensores</string>
+    <string name="title_activity_main">Challenge 07 - Sensores</string>
+    <string name="package_name">com.challenge07.sensores</string>
+    <string name="custom_url_scheme">com.challenge07.sensores</string>
+</resources>

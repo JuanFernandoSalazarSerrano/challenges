@@ -1,0 +1,33 @@
+.home-toolbar {
+	--background: #0d3f67;
+	--color: #ffffff;
+}
+
+.home-content {
+	--background: linear-gradient(180deg, #e8f4ff 0%, #f2f8ff 50%, #f8fbff 100%);
+}
+
+.home-hero {
+	margin: 6px 0 14px;
+	padding: 18px;
+	border-radius: 16px;
+	background: #d8ebff;
+	border: 1px solid #b9d8f5;
+}
+
+.home-hero h1 {
+	margin: 0;
+	font-size: 24px;
+	color: #0c3254;
+}
+
+.home-hero p {
+	margin: 10px 0 0;
+	color: #2f5e87;
+}
+
+.sensor-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+	gap: 10px;
+}
